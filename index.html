@@ -434,14 +434,12 @@ footer{background:var(--footer-bg);padding:clamp(48px,6vw,80px) 0 0;}
 <!-- NAVBAR -->
 <nav class="navbar">
   <a class="nav-logo" onclick="showPage('home')">
-    <div class="nav-logo-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-    </div>
     <div class="nav-logo-text">
       PromptOps AI
       <span>Design · Optimise · Automate · Elevate</span>
     </div>
   </a>
+
   <ul class="nav-links">
     <li><button id="nav-home" class="active" onclick="showPage('home')">Home</button></li>
     <li><button id="nav-about" onclick="showPage('about')">About</button></li>
@@ -452,9 +450,14 @@ footer{background:var(--footer-bg);padding:clamp(48px,6vw,80px) 0 0;}
     <li><button id="nav-pricing" onclick="showPage('pricing')">Pricing</button></li>
     <li><button id="nav-contact" onclick="showPage('contact')">Contact</button></li>
   </ul>
+
   <div class="nav-right">
     <button class="btn-demo-nav" onclick="showPage('contact')">Request Demo</button>
-    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </nav>
 
@@ -468,9 +471,10 @@ footer{background:var(--footer-bg);padding:clamp(48px,6vw,80px) 0 0;}
   <button onclick="showPage('faq');closeMobile()">FAQ</button>
   <button onclick="showPage('pricing');closeMobile()">Pricing</button>
   <button onclick="showPage('contact');closeMobile()">Contact</button>
-  <button class="mob-cta" onclick="showPage('contact');closeMobile()">Request Demo →</button>
+  <button class="mob-cta" onclick="showPage('contact');closeMobile()">
+    Request Demo →
+  </button>
 </div>
-
 
 <!-- ═══════════ PAGE : HOME ═══════════ -->
 <div class="page active" id="page-home">
